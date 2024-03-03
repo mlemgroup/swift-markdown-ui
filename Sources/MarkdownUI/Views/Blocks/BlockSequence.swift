@@ -29,6 +29,7 @@ where
           .onPreferenceChange(BlockMarginsPreference.self) { value in
             self.blockMargins[element.hashValue] = value
           }
+          .textSelection(.enabled)
           .padding(.top, self.topPaddingLength(for: element))
       }
     }
